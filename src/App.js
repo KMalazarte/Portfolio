@@ -1,13 +1,12 @@
-import React from 'react';
 import React, { Fragment } from 'react';
-import Nav from ./components/Nav.js
-import './App.css';
+import Nav from './components/Nav.js';
+import './App.css'
 
 function App() {
   return (
-    <Fragment>
+    <div>
       <Nav />
-    </Fragment>
+    </div>
   )
 }
 

@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Menu } from 'semantic-ui-react'
 
 const Nav = () => {
+  const greeting = "Hello World"
   return (
-    <Fragment>
-      <h1> You did it <h1>
-    </Fragment>
-  )
-}
+    <Menu>
+      <h1>{greeting}</h1>
+    </Menu>
+)}
 
 export default Nav
