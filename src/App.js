@@ -1,13 +1,16 @@
 import React, { Fragment } from 'react';
-import Nav from './components/Nav.js';
+import Template from './components/Template.js';
+import './index.css';
 import './App.css'
 
-function App() {
-  return (
-    <div>
-      <Nav />
-    </div>
-  )
+class App extends React.Component {
+  render() {
+    return (
+      <Fragment>
+        <Template />
+      </Fragment>
+    )
+  }
 }
 
 export default App;
