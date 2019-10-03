@@ -9,6 +9,7 @@ import {
   Header,
   Icon,
   Image,
+  Card,
   List,
   Menu,
   Responsive,
@@ -64,6 +65,7 @@ const HomepageHeading = ({ mobile }) => (
         style={{
           fontSize: mobile ? '1.5em' : '3em',
           fontWeight: 'normal',
+          padding: '.2em',
           marginTop: mobile ? '1em' : '2em'
           }}
         class="fab fa-linkedin">
@@ -75,6 +77,7 @@ const HomepageHeading = ({ mobile }) => (
         style={{
         fontSize: mobile ? '1.5em' : '3em',
         fontWeight: 'normal',
+        padding: '.2em',
         marginTop: mobile ? '1em' : '2em'
         }}>
       </i>
@@ -85,6 +88,7 @@ const HomepageHeading = ({ mobile }) => (
         style={{
         fontSize: mobile ? '1.5em' : '3em',
         fontWeight: 'normal',
+        padding: '.2em',
         marginTop: mobile ? '1em' : '2em'
         }}>
       </i>
@@ -106,9 +110,16 @@ class DesktopContainer extends Component {
   hideFixedMenu = () => this.setState({ fixed: false })
   showFixedMenu = () => this.setState({ fixed: true })
 
+  clickHandler = (e) => {
+    console.log(e.currentTarget.innerText.toLowerCase())
+    document.getElementById(e.currentTarget.innerText.toLowerCase()).scrollIntoView({block: "center", behavior: "smooth"})
+  }
+
   render() {
     const { children } = this.props
     const { fixed } = this.state
+
+    let home = document.getElementById("home")
 
     return (
       <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
@@ -131,20 +142,19 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
-                <ScrollIntoView selector="#home" alignToTop={true}>
-                  <Menu.Item as='a' active>
+
+                  <Menu.Item name="menuHome" onClick={this.clickHandler} as='a' active>
                     Home
                   </Menu.Item>
-                </ScrollIntoView>
-                <ScrollIntoView selector="#projects">
-                  <Menu.Item as='a'>Projects</Menu.Item>
-                </ScrollIntoView>
-                <ScrollIntoView selector="#blogs">
-                  <Menu.Item as='a'>Blogs</Menu.Item>
-                </ScrollIntoView>
-                <ScrollIntoView selector="#about">
-                  <Menu.Item as='a'>About Me</Menu.Item>
-                </ScrollIntoView>
+
+                  <Menu.Item onClick={this.clickHandler} as='a'>Projects</Menu.Item>
+
+
+                  <Menu.Item onClick={this.clickHandler} as='a'>Blogs</Menu.Item>
+
+
+                  <Menu.Item onClick={this.clickHandler} as='a'>About Me</Menu.Item>
+
               </Container>
             </Menu>
             <HomepageHeading />
@@ -250,8 +260,32 @@ const HomepageLayout = () => (
         <Grid.Row id="projects">
           <Grid.Column width={8}>
             <Header as='h3' style={{ fontSize: '2em' }}>
-              Personal Projects
+              Projects
             </Header>
+            <ul>
+              <li>
+                <Card>
+                  <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
+                  <Card.Content>
+                    <Card.Header>Matthew</Card.Header>
+                    <Card.Meta>
+                      <span className='date'>Joined in 2015</span>
+                    </Card.Meta>
+                    <Card.Description>
+                      Matthew is a musician living in Nashville.
+                    </Card.Description>
+                  </Card.Content>
+                  <Card.Content extra>
+                    <a>
+                      <Icon name='user' />
+                      22 Friends
+                    </a>
+                  </Card.Content>
+                </Card>
+              </li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
             <p style={{ fontSize: '1.33em' }}>
               ProjectsProjectsProjectsProjectsProjectsProjectsProjectsProjectsProjects
             </p>
@@ -296,7 +330,7 @@ const HomepageLayout = () => (
     </Segment>
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
-        <Header id="about" as='h3' style={{ fontSize: '2em' }}>
+        <Header id="about me" as='h3' style={{ fontSize: '2em' }}>
           About Me
         </Header>
         <p style={{ fontSize: '1.33em' }}>
