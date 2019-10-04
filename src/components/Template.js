@@ -55,45 +55,49 @@ const HomepageHeading = ({ mobile }) => (
         marginTop: mobile ? '0.5em' : '1.5em',
       }}
     />
-    <a href="https://drive.google.com/open?id=1tNPDLc4JwXyK5DKfnF9HJxc8KeJlYPr9">
-      <Button primary size='huge'>
-        View My Resume
-        <i class="far fa-file"></i>
-      </Button>
-    </a>
-    <a href="https://www.linkedin.com/in/kevin-malazarte/">
-      <i
-        style={{
+    <div>
+      <a href="https://drive.google.com/open?id=1oIK5XT9R9rroABlDQNnr7loN2A9Xtfu6" target="_blank">
+        <Button primary size='huge'>
+          View My Resume
+          <i class="far fa-file"></i>
+        </Button>
+      </a>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/kevin-malazarte/" target="_blank">
+        <i
+          style={{
+            fontSize: mobile ? '1.5em' : '3em',
+            fontWeight: 'normal',
+            padding: '.2em',
+            marginTop: mobile ? '1em' : '2em'
+            }}
+          class="fab fa-linkedin">
+        </i>
+      </a>
+      <a href="https://github.com/KMalazarte" target="_blank">
+        <i
+          class="fab fa-github-square"
+          style={{
           fontSize: mobile ? '1.5em' : '3em',
           fontWeight: 'normal',
           padding: '.2em',
           marginTop: mobile ? '1em' : '2em'
-          }}
-        class="fab fa-linkedin">
-      </i>
-    </a>
-    <a href="https://github.com/KMalazarte">
-      <i
-        class="fab fa-github-square"
-        style={{
-        fontSize: mobile ? '1.5em' : '3em',
-        fontWeight: 'normal',
-        padding: '.2em',
-        marginTop: mobile ? '1em' : '2em'
-        }}>
-      </i>
-    </a>
-    <a href="https://medium.com/@KMalazarte">
-      <i
-        class="fab fa-medium"
-        style={{
-        fontSize: mobile ? '1.5em' : '3em',
-        fontWeight: 'normal',
-        padding: '.2em',
-        marginTop: mobile ? '1em' : '2em'
-        }}>
-      </i>
-    </a>
+          }}>
+        </i>
+      </a>
+      <a href="https://medium.com/@KMalazarte" target="_blank">
+        <i
+          class="fab fa-medium"
+          style={{
+          fontSize: mobile ? '1.5em' : '3em',
+          fontWeight: 'normal',
+          padding: '.2em',
+          marginTop: mobile ? '1em' : '2em'
+          }}>
+        </i>
+      </a>
+    </div>
   </Container>
 )
 
@@ -143,25 +147,17 @@ class DesktopContainer extends Component {
               size='large'
             >
               <Container>
-
                   <Menu.Item name="menuHome" onClick={this.clickHandler} as='a' active>
                     Home
                   </Menu.Item>
-
                   <Menu.Item onClick={this.clickHandler} as='a'>Projects</Menu.Item>
-
-
                   <Menu.Item onClick={this.clickHandler} as='a'>Blogs</Menu.Item>
-
-
                   <Menu.Item onClick={this.clickHandler} as='a'>About Me</Menu.Item>
-
               </Container>
             </Menu>
             <HomepageHeading />
           </Segment>
         </Visibility>
-
         {children}
       </Responsive>
     )
@@ -257,17 +253,16 @@ ResponsiveContainer.propTypes = {
 const HomepageLayout = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '8em 0em' }} vertical>
-      <Grid container stackable verticalAlign='middle' >
+      <Grid equal width grid container stackable verticalAlign='middle' >
         <Grid.Row id="projects">
             <Header textAlign="center" as='h3' style={{ fontSize: '4em' }}>
               Projects
             </Header>
         </Grid.Row>
         <Grid.Row>
-
             <ul>
-                <Card>
-                  <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
+                <Card raised>
+                  <Image src='./images/screenshot_1.png' wrapped ui={false} />
                   <Card.Content>
                     <Card.Header textAlign="center">$pendy</Card.Header>
                     <Card.Meta>
@@ -296,7 +291,7 @@ const HomepageLayout = () => (
                 </Card>
             </ul>
             <ul>
-                <Card>
+                <Card raised>
                   <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
                   <Card.Content>
                     <Card.Header textAlign="center">MovieReviewer</Card.Header>
@@ -326,7 +321,7 @@ const HomepageLayout = () => (
                 </Card>
             </ul>
             <ul>
-                <Card>
+                <Card raised>
                   <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
                   <Card.Content>
                     <Card.Header textAlign="center">Flex Buddy</Card.Header>
