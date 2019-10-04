@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import ScrollIntoView from 'react-scroll-into-view'
+import screenShot_1 from '../images/screenshot_1.png'
+import screenShot_2 from '../images/screenshot_2.png'
+import screenShot_3 from '../images/screenshot_3.png'
 import {
   Button,
   Container,
@@ -262,7 +265,7 @@ const HomepageLayout = () => (
         <Grid.Row>
             <ul>
                 <Card raised>
-                  <Image src='./images/screenshot_1.png' wrapped ui={false} />
+                  <Image src={screenShot_1} wrapped ui={false} />
                   <Card.Content>
                     <Card.Header textAlign="center">$pendy</Card.Header>
                     <Card.Meta>
@@ -292,7 +295,7 @@ const HomepageLayout = () => (
             </ul>
             <ul>
                 <Card raised>
-                  <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
+                  <Image src={screenShot_2} wrapped ui={false} />
                   <Card.Content>
                     <Card.Header textAlign="center">MovieReviewer</Card.Header>
                     <Card.Meta>
@@ -322,7 +325,7 @@ const HomepageLayout = () => (
             </ul>
             <ul>
                 <Card raised>
-                  <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
+                  <Image src={screenShot_3} wrapped ui={false} />
                   <Card.Content>
                     <Card.Header textAlign="center">Flex Buddy</Card.Header>
                     <Card.Meta>
@@ -353,25 +356,27 @@ const HomepageLayout = () => (
         </Grid.Row>
       </Grid>
     </Segment>
-    <Segment style={{ padding: '0em' }} vertical>
-      <Grid celled='internally' columns='equal' stackable>
+    <Segment vertical>
+      <Grid centered="true" columns='equal' stackable>
         <Grid.Row textAlign='center'>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header id="blogs" as='h3' style={{ fontSize: '2em' }}>
-              Blogs
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>BlogsBlogsBlogsBlogsBlogsBlogsBlogs</p>
-          </Grid.Column>
-          <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              "I shouldn't have gone with their competitor."
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              <Image avatar src='/images/avatar/large/nan.jpg' />
-              <b>Nan</b> Chief Fun Officer Acme Toys
-            </p>
-          </Grid.Column>
+          <Header id="blogs" as='h3' style={{ fontSize: '2em' }}>
+            <i class="fab fa-medium">
+            </i>&nbsp;
+            Blogs
+          </Header>
         </Grid.Row>
+            <Grid.Row>
+              <a href="https://medium.com/@KMalazarte/the-machines-are-learning-3ea4bca2b66a">The Machines Are Learning</a>
+            </Grid.Row>
+            <Grid.Row>
+              <a href="https://medium.com/@KMalazarte/ruby-vs-javascript-f5d9ec9221a">Ruby vs Javascript</a>
+            </Grid.Row>
+            <Grid.Row>
+              <a href="https://medium.com/@KMalazarte/data-analytics-and-tech-in-the-nba-cb48084774f0">Data analytics & the NBA</a>
+            </Grid.Row>
+            <Grid.Row>
+              <a href="https://medium.com/@KMalazarte/the-atom-packages-your-mama-warned-you-about-or-didnt-5f15d9e50801">My favorite Atom packages</a>
+            </Grid.Row>
       </Grid>
     </Segment>
     <Segment style={{ padding: '8em 0em' }} vertical>
@@ -379,8 +384,11 @@ const HomepageLayout = () => (
         <Header id="about me" as='h3' style={{ fontSize: '2em' }}>
           About Me
         </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          All this shit about me
+        <p style={{ fontSize: '1em' }}>
+          Full stack web developer with a passion for creating user friendly applications that simplify peoples’ lives. With
+          experience in Ruby on Rails, JavaScript, and React.js and a background in commercial insurance, I discovered
+          web development through my curiosity of how modern technology works. By possessing strong skills in project
+          management and team building I can get the most from my team and deliver a functional project on schedule.
         </p>
         <Button as='a' size='large'>
           Read More
