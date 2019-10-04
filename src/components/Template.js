@@ -15,6 +15,7 @@ import {
   Responsive,
   Segment,
   Sidebar,
+  Embed,
   Visibility
 } from 'semantic-ui-react'
 
@@ -256,54 +257,104 @@ ResponsiveContainer.propTypes = {
 const HomepageLayout = () => (
   <ResponsiveContainer>
     <Segment style={{ padding: '8em 0em' }} vertical>
-      <Grid container stackable verticalAlign='middle'>
+      <Grid container stackable verticalAlign='middle' >
         <Grid.Row id="projects">
-          <Grid.Column width={8}>
-            <Header as='h3' style={{ fontSize: '2em' }}>
+            <Header textAlign="center" as='h3' style={{ fontSize: '4em' }}>
               Projects
             </Header>
+        </Grid.Row>
+        <Grid.Row>
+
             <ul>
-              <li>
                 <Card>
                   <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
                   <Card.Content>
-                    <Card.Header>Matthew</Card.Header>
+                    <Card.Header textAlign="center">$pendy</Card.Header>
                     <Card.Meta>
                       <span className='date'>Joined in 2015</span>
                     </Card.Meta>
                     <Card.Description>
-                      Matthew is a musician living in Nashville.
+                      An easy way to keep track of expenses to prevent excessive spending
                     </Card.Description>
                   </Card.Content>
                   <Card.Content extra>
-                    <a>
-                      <Icon name='user' />
-                      22 Friends
+                    <a href="https://github.com/KMalazarte/Mod_5_Money_Tracker/" target="_blank">
+                      <i class="fab fa-github">&nbsp;</i>
+                      Front End &nbsp;
+                    </a>
+                    | &nbsp;
+                    <a href="https://github.com/KMalazarte/spendy-api" target="_blank">
+                      <i class="fab fa-github">&nbsp;</i>
+                      Back End &nbsp;
+                    </a>
+                    | &nbsp;
+                    <a href="https://www.youtube.com/watch?v=C_iWGRKRf5U&feature=youtu.be" target="_blank">
+                      <i class="fab fa-youtube">&nbsp;</i>
+                      Demo
                     </a>
                   </Card.Content>
                 </Card>
-              </li>
-              <li>2</li>
-              <li>3</li>
             </ul>
-            <p style={{ fontSize: '1.33em' }}>
-              ProjectsProjectsProjectsProjectsProjectsProjectsProjectsProjectsProjects
-            </p>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              More Projects
-            </Header>
-            <p style={{ fontSize: '1.33em' }}>
-              More ProjectsMore ProjectsMore ProjectsMore ProjectsMore ProjectsMore ProjectsMore ProjectsMore ProjectsMore ProjectsMore Projects
-            </p>
-          </Grid.Column>
-          <Grid.Column floated='right' width={6}>
-            <Image bordered rounded size='large' src='https://assets.epicurious.com/photos/57c5c6d9cf9e9ad43de2d96e/master/pass/the-ultimate-hamburger.jpg' />
-          </Grid.Column>
-        </Grid.Row>
-        <Grid.Row>
-          <Grid.Column textAlign='center'>
-            <Button size='huge'>Check Them Out</Button>
-          </Grid.Column>
+            <ul>
+                <Card>
+                  <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
+                  <Card.Content>
+                    <Card.Header textAlign="center">MovieReviewer</Card.Header>
+                    <Card.Meta>
+                      <span className='date'>Joined in 2015</span>
+                    </Card.Meta>
+                    <Card.Description>
+                    A movie site where users can rate and review the newest movies
+                    </Card.Description>
+                  </Card.Content>
+                  <Card.Content extra>
+                    <a href="https://github.com/KMalazarte/Mod_4_front_end" target="_blank">
+                      <i class="fab fa-github">&nbsp;</i>
+                      Front End &nbsp;
+                    </a>
+                    | &nbsp;
+                    <a href="https://github.com/KMalazarte/Movie-Reviewer" target="_blank">
+                      <i class="fab fa-github">&nbsp;</i>
+                      Back End &nbsp;
+                    </a>
+                    | &nbsp;
+                    <a href="https://www.youtube.com/watch?v=C_iWGRKRf5U&feature=youtu.be" target="_blank">
+                      <i class="fab fa-youtube">&nbsp;</i>
+                      Demo
+                    </a>
+                  </Card.Content>
+                </Card>
+            </ul>
+            <ul>
+                <Card>
+                  <Image src='/images/avatar/large/matthew.png' wrapped ui={false} />
+                  <Card.Content>
+                    <Card.Header textAlign="center">Flex Buddy</Card.Header>
+                    <Card.Meta>
+                      <span className='date'>Joined in 2015</span>
+                    </Card.Meta>
+                    <Card.Description>
+                      An easy way to keep track of expenses to prevent excessive spending
+                    </Card.Description>
+                  </Card.Content>
+                  <Card.Content extra>
+                    <a href="https://github.com/KMalazarte/mod3_project_front_end" target="_blank">
+                      <i class="fab fa-github">&nbsp;</i>
+                      Front End &nbsp;
+                    </a>
+                    | &nbsp;
+                    <a href="https://github.com/KMalazarte/mod3_project_back_end" target="_blank">
+                      <i class="fab fa-github">&nbsp;</i>
+                      Back End &nbsp;
+                    </a>
+                    | &nbsp;
+                    <a href="https://www.youtube.com/watch?v=j9ZhmJBlkcI" target="_blank">
+                      <i class="fab fa-youtube">&nbsp;</i>
+                      Demo
+                    </a>
+                  </Card.Content>
+                </Card>
+            </ul>
         </Grid.Row>
       </Grid>
     </Segment>
