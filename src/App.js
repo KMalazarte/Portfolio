@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Template from './components/Template.js';
+import Template from './components/template.js';
 import './index.css';
 import './App.css'
 
