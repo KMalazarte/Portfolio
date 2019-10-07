@@ -365,18 +365,18 @@ const HomepageLayout = () => (
             Blogs
           </Header>
         </Grid.Row>
-            <Grid.Row>
-              <a href="https://medium.com/@KMalazarte/the-machines-are-learning-3ea4bca2b66a">The Machines Are Learning</a>
-            </Grid.Row>
-            <Grid.Row>
-              <a href="https://medium.com/@KMalazarte/ruby-vs-javascript-f5d9ec9221a">Ruby vs Javascript</a>
-            </Grid.Row>
-            <Grid.Row>
-              <a href="https://medium.com/@KMalazarte/data-analytics-and-tech-in-the-nba-cb48084774f0">Data analytics & the NBA</a>
-            </Grid.Row>
-            <Grid.Row>
-              <a href="https://medium.com/@KMalazarte/the-atom-packages-your-mama-warned-you-about-or-didnt-5f15d9e50801">My favorite Atom packages</a>
-            </Grid.Row>
+        <Grid.Row>
+          <a href="https://medium.com/@KMalazarte/the-machines-are-learning-3ea4bca2b66a">The Machines Are Learning</a>
+        </Grid.Row>
+        <Grid.Row>
+          <a href="https://medium.com/@KMalazarte/ruby-vs-javascript-f5d9ec9221a">Ruby vs Javascript</a>
+        </Grid.Row>
+        <Grid.Row>
+          <a href="https://medium.com/@KMalazarte/data-analytics-and-tech-in-the-nba-cb48084774f0">Data Analytics & the NBA</a>
+        </Grid.Row>
+        <Grid.Row>
+          <a href="https://medium.com/@KMalazarte/the-atom-packages-your-mama-warned-you-about-or-didnt-5f15d9e50801">My Favorite Atom Packages</a>
+        </Grid.Row>
       </Grid>
     </Segment>
     <Segment style={{ padding: '8em 0em' }} vertical>
