@@ -1,10 +1,8 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import screenShot_1 from '../images/screenshot_1.png';
 import screenShot_2 from '../images/screenshot_2.png';
 import screenShot_3 from '../images/screenshot_3.png';
-import DesktopContainer from './desktopContainer.js'
-import MobileContainer from './mobileContainer.js'
+import ResponsiveContainer from './responsiveContainer.js'
 import {
   Button,
   Container,
@@ -164,16 +162,16 @@ import {
 //   children: PropTypes.node,
 // }
 
-const ResponsiveContainer = ({ children }) => (
-  <div>
-    <DesktopContainer>{children}</DesktopContainer>
-    <MobileContainer>{children}</MobileContainer>
-  </div>
-)
-
-ResponsiveContainer.propTypes = {
-  children: PropTypes.node,
-}
+// const ResponsiveContainer = ({ children }) => (
+//   <div>
+//     <DesktopContainer>{children}</DesktopContainer>
+//     <MobileContainer>{children}</MobileContainer>
+//   </div>
+// )
+//
+// ResponsiveContainer.propTypes = {
+//   children: PropTypes.node,
+// }
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
