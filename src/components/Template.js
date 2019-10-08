@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import ScrollIntoView from 'react-scroll-into-view';
 import screenShot_1 from '../images/screenshot_1.png';
 import screenShot_2 from '../images/screenshot_2.png';
 import screenShot_3 from '../images/screenshot_3.png';
 import HomepageHeading from './homepageHeading.js'
+import DesktopContainer from './desktopContainer.js'
 import {
   Button,
   Container,
@@ -18,9 +18,7 @@ import {
   Menu,
   Responsive,
   Segment,
-  Sidebar,
-  Embed,
-  Visibility
+  Sidebar
 } from 'semantic-ui-react'
 
 // Heads up!
@@ -38,72 +36,66 @@ const getWidth = () => {
  */
 
 
-HomepageHeading.propTypes = {
-  mobile: PropTypes.bool,
-}
-
 /* Heads up!
  * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
  * It can be more complicated, but you can create really flexible markup.
  */
-class DesktopContainer extends Component {
-  state = {}
-
-  hideFixedMenu = () => this.setState({ fixed: false })
-  showFixedMenu = () => this.setState({ fixed: true })
-
-  clickHandler = (e) => {
-    console.log(e.currentTarget.innerText.toLowerCase())
-    document.getElementById(e.currentTarget.innerText.toLowerCase()).scrollIntoView({block: "center", behavior: "smooth"})
-  }
-
-  render() {
-    const { children } = this.props
-    const { fixed } = this.state
-
-    let home = document.getElementById("home")
-
-    return (
-      <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
-        <Visibility
-          once={false}
-          onBottomPassed={this.showFixedMenu}
-          onBottomPassedReverse={this.hideFixedMenu}
-        >
-          <Segment
-            inverted
-            textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em' }}
-            vertical
-          >
-            <Menu
-              fixed={fixed ? 'top' : null}
-              inverted={!fixed}
-              pointing={!fixed}
-              secondary={!fixed}
-              size='large'
-            >
-              <Container>
-                  <Menu.Item name="menuHome" onClick={this.clickHandler} as='a' active>
-                    Home
-                  </Menu.Item>
-                  <Menu.Item onClick={this.clickHandler} as='a'>Projects</Menu.Item>
-                  <Menu.Item onClick={this.clickHandler} as='a'>Blogs</Menu.Item>
-                  <Menu.Item onClick={this.clickHandler} as='a'>About Me</Menu.Item>
-              </Container>
-            </Menu>
-            <HomepageHeading />
-          </Segment>
-        </Visibility>
-        {children}
-      </Responsive>
-    )
-  }
-}
-
-DesktopContainer.propTypes = {
-  children: PropTypes.node,
-}
+// class DesktopContainer extends Component {
+//   state = {}
+//
+//   hideFixedMenu = () => this.setState({ fixed: false })
+//   showFixedMenu = () => this.setState({ fixed: true })
+//
+//   clickHandler = (e) => {
+//     console.log(e.currentTarget.innerText.toLowerCase())
+//     document.getElementById(e.currentTarget.innerText.toLowerCase()).scrollIntoView({block: "center", behavior: "smooth"})
+//   }
+//
+//   render() {
+//     const { children } = this.props
+//     const { fixed } = this.state
+//
+//     return (
+//       <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
+//         <Visibility
+//           once={false}
+//           onBottomPassed={this.showFixedMenu}
+//           onBottomPassedReverse={this.hideFixedMenu}
+//         >
+//           <Segment
+//             inverted
+//             textAlign='center'
+//             style={{ minHeight: 700, padding: '1em 0em' }}
+//             vertical
+//           >
+//             <Menu
+//               fixed={fixed ? 'top' : null}
+//               inverted={!fixed}
+//               pointing={!fixed}
+//               secondary={!fixed}
+//               size='large'
+//             >
+//               <Container>
+//                   <Menu.Item name="menuHome" onClick={this.clickHandler} as='a' active>
+//                     Home
+//                   </Menu.Item>
+//                   <Menu.Item onClick={this.clickHandler} as='a'>Projects</Menu.Item>
+//                   <Menu.Item onClick={this.clickHandler} as='a'>Blogs</Menu.Item>
+//                   <Menu.Item onClick={this.clickHandler} as='a'>About Me</Menu.Item>
+//               </Container>
+//             </Menu>
+//             <HomepageHeading />
+//           </Segment>
+//         </Visibility>
+//         {children}
+//       </Responsive>
+//     )
+//   }
+// }
+//
+// DesktopContainer.propTypes = {
+//   children: PropTypes.node,
+// }
 
 class MobileContainer extends Component {
   state = {}
@@ -210,17 +202,17 @@ const HomepageLayout = () => (
                     </Card.Description>
                   </Card.Content>
                   <Card.Content extra>
-                    <a href="https://github.com/KMalazarte/Mod_5_Money_Tracker/" target="_blank">
+                    <a href="https://github.com/KMalazarte/Mod_5_Money_Tracker/" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-github">&nbsp;</i>
                       Front End &nbsp;
                     </a>
                     | &nbsp;
-                    <a href="https://github.com/KMalazarte/spendy-api" target="_blank">
+                    <a href="https://github.com/KMalazarte/spendy-api" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-github">&nbsp;</i>
                       Back End &nbsp;
                     </a>
                     | &nbsp;
-                    <a href="https://www.youtube.com/watch?v=C_iWGRKRf5U&feature=youtu.be" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=C_iWGRKRf5U&feature=youtu.be" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-youtube">&nbsp;</i>
                       Demo
                     </a>
@@ -240,17 +232,17 @@ const HomepageLayout = () => (
                     </Card.Description>
                   </Card.Content>
                   <Card.Content extra>
-                    <a href="https://github.com/KMalazarte/Mod_4_front_end" target="_blank">
+                    <a href="https://github.com/KMalazarte/Mod_4_front_end" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-github">&nbsp;</i>
                       Front End &nbsp;
                     </a>
                     | &nbsp;
-                    <a href="https://github.com/KMalazarte/Movie-Reviewer" target="_blank">
+                    <a href="https://github.com/KMalazarte/Movie-Reviewer" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-github">&nbsp;</i>
                       Back End &nbsp;
                     </a>
                     | &nbsp;
-                    <a href="https://www.youtube.com/watch?v=C_iWGRKRf5U&feature=youtu.be" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=C_iWGRKRf5U&feature=youtu.be" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-youtube">&nbsp;</i>
                       Demo
                     </a>
@@ -270,17 +262,17 @@ const HomepageLayout = () => (
                     </Card.Description>
                   </Card.Content>
                   <Card.Content extra>
-                    <a href="https://github.com/KMalazarte/mod3_project_front_end" target="_blank">
+                    <a href="https://github.com/KMalazarte/mod3_project_front_end" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-github">&nbsp;</i>
                       Front End &nbsp;
                     </a>
                     | &nbsp;
-                    <a href="https://github.com/KMalazarte/mod3_project_back_end" target="_blank">
+                    <a href="https://github.com/KMalazarte/mod3_project_back_end" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-github">&nbsp;</i>
                       Back End &nbsp;
                     </a>
                     | &nbsp;
-                    <a href="https://www.youtube.com/watch?v=j9ZhmJBlkcI" target="_blank">
+                    <a href="https://www.youtube.com/watch?v=j9ZhmJBlkcI" target="_blank" rel="noopener noreferrer">
                       <i class="fab fa-youtube">&nbsp;</i>
                       Demo
                     </a>
@@ -300,16 +292,16 @@ const HomepageLayout = () => (
           </Header>
         </Grid.Row>
         <Grid.Row>
-          <a href="https://medium.com/@KMalazarte/the-machines-are-learning-3ea4bca2b66a">The Machines Are Learning</a>
+          <a href="https://medium.com/@KMalazarte/the-machines-are-learning-3ea4bca2b66a" target="_blank" rel="noopener noreferrer">The Machines Are Learning</a>
         </Grid.Row>
         <Grid.Row>
-          <a href="https://medium.com/@KMalazarte/ruby-vs-javascript-f5d9ec9221a">Ruby vs Javascript</a>
+          <a href="https://medium.com/@KMalazarte/ruby-vs-javascript-f5d9ec9221a" target="_blank" rel="noopener noreferrer">Ruby vs Javascript</a>
         </Grid.Row>
         <Grid.Row>
-          <a href="https://medium.com/@KMalazarte/data-analytics-and-tech-in-the-nba-cb48084774f0">Data Analytics & the NBA</a>
+          <a href="https://medium.com/@KMalazarte/data-analytics-and-tech-in-the-nba-cb48084774f0" target="_blank" rel="noopener noreferrer">Data Analytics & the NBA</a>
         </Grid.Row>
         <Grid.Row>
-          <a href="https://medium.com/@KMalazarte/the-atom-packages-your-mama-warned-you-about-or-didnt-5f15d9e50801">My Favorite Atom Packages</a>
+          <a href="https://medium.com/@KMalazarte/the-atom-packages-your-mama-warned-you-about-or-didnt-5f15d9e50801" target="_blank" rel="noopener noreferrer">My Favorite Atom Packages</a>
         </Grid.Row>
       </Grid>
     </Segment>

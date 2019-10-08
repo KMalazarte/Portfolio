@@ -1,5 +1,5 @@
+import React from 'react';
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
 import {
   Button,
   Container,
@@ -31,7 +31,7 @@ const HomepageHeading = ({ mobile }) => {
         }}
       />
       <div>
-        <a href="https://drive.google.com/open?id=1oIK5XT9R9rroABlDQNnr7loN2A9Xtfu6" target="_blank">
+        <a href="https://drive.google.com/open?id=1oIK5XT9R9rroABlDQNnr7loN2A9Xtfu6" target="_blank" rel="noopener noreferrer">
           <Button primary size='huge'>
             View My Resume
             <i class="far fa-file"></i>
@@ -39,7 +39,7 @@ const HomepageHeading = ({ mobile }) => {
         </a>
       </div>
       <div>
-        <a href="https://www.linkedin.com/in/kevin-malazarte/" target="_blank">
+        <a href="https://www.linkedin.com/in/kevin-malazarte/" target="_blank" rel="noopener noreferrer">
           <i
             style={{
               fontSize: mobile ? '1.5em' : '3em',
@@ -50,7 +50,7 @@ const HomepageHeading = ({ mobile }) => {
             class="fab fa-linkedin">
           </i>
         </a>
-        <a href="https://github.com/KMalazarte" target="_blank">
+        <a href="https://github.com/KMalazarte" target="_blank" rel="noopener noreferrer">
           <i
             class="fab fa-github-square"
             style={{
@@ -61,7 +61,7 @@ const HomepageHeading = ({ mobile }) => {
             }}>
           </i>
         </a>
-        <a href="https://medium.com/@KMalazarte" target="_blank">
+        <a href="https://medium.com/@KMalazarte" target="_blank" rel="noopener noreferrer">
           <i
             class="fab fa-medium"
             style={{
@@ -75,4 +75,9 @@ const HomepageHeading = ({ mobile }) => {
       </div>
     </Container>
   )}
+
+  HomepageHeading.propTypes = {
+    mobile: PropTypes.bool,
+  }
+
 export default HomepageHeading
