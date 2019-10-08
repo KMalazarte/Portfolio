@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Template from './components/template.js';
+import HomepageLayout from './components/homepageLayout.js';
 import './index.css';
 import './App.css'
 
@@ -7,7 +7,7 @@ class App extends React.Component {
   render() {
     return (
       <Fragment>
-        <Template />
+        <HomepageLayout />
       </Fragment>
     )
   }
