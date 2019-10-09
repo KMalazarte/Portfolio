@@ -1,5 +1,5 @@
+import React from 'react';
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
 import {
   Button,
   Container,
@@ -31,43 +31,43 @@ const HomepageHeading = ({ mobile }) => {
         }}
       />
       <div>
-        <a href="https://drive.google.com/open?id=1oIK5XT9R9rroABlDQNnr7loN2A9Xtfu6" target="_blank">
-          <Button primary size='huge'>
-            View My Resume
+        <a href="https://drive.google.com/open?id=1oIK5XT9R9rroABlDQNnr7loN2A9Xtfu6" target="_blank" rel="noopener noreferrer">
+          <Button inverted color='blue' size='huge'>
+            View My Resume &nbsp;
             <i class="far fa-file"></i>
           </Button>
         </a>
       </div>
       <div>
-        <a href="https://www.linkedin.com/in/kevin-malazarte/" target="_blank">
+        <a href="https://www.linkedin.com/in/kevin-malazarte/" target="_blank" rel="noopener noreferrer">
           <i
             style={{
               fontSize: mobile ? '1.5em' : '3em',
               fontWeight: 'normal',
-              padding: '.2em',
+              padding: '.1em',
               marginTop: mobile ? '1em' : '2em'
               }}
             class="fab fa-linkedin">
           </i>
         </a>
-        <a href="https://github.com/KMalazarte" target="_blank">
+        <a href="https://github.com/KMalazarte" target="_blank" rel="noopener noreferrer">
           <i
             class="fab fa-github-square"
             style={{
             fontSize: mobile ? '1.5em' : '3em',
             fontWeight: 'normal',
-            padding: '.2em',
+            padding: '.1em',
             marginTop: mobile ? '1em' : '2em'
             }}>
           </i>
         </a>
-        <a href="https://medium.com/@KMalazarte" target="_blank">
+        <a href="https://medium.com/@KMalazarte" target="_blank" rel="noopener noreferrer">
           <i
             class="fab fa-medium"
             style={{
             fontSize: mobile ? '1.5em' : '3em',
             fontWeight: 'normal',
-            padding: '.2em',
+            padding: '.1em',
             marginTop: mobile ? '1em' : '2em'
             }}>
           </i>
@@ -75,4 +75,9 @@ const HomepageHeading = ({ mobile }) => {
       </div>
     </Container>
   )}
+
+  HomepageHeading.propTypes = {
+    mobile: PropTypes.bool,
+  }
+
 export default HomepageHeading
