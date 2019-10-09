@@ -32,8 +32,8 @@ const HomepageHeading = ({ mobile }) => {
       />
       <div>
         <a href="https://drive.google.com/open?id=1oIK5XT9R9rroABlDQNnr7loN2A9Xtfu6" target="_blank" rel="noopener noreferrer">
-          <Button primary size='huge'>
-            View My Resume
+          <Button inverted color='blue' size='huge'>
+            View My Resume &nbsp;
             <i class="far fa-file"></i>
           </Button>
         </a>
@@ -44,7 +44,7 @@ const HomepageHeading = ({ mobile }) => {
             style={{
               fontSize: mobile ? '1.5em' : '3em',
               fontWeight: 'normal',
-              padding: '.2em',
+              padding: '.1em',
               marginTop: mobile ? '1em' : '2em'
               }}
             class="fab fa-linkedin">
@@ -56,7 +56,7 @@ const HomepageHeading = ({ mobile }) => {
             style={{
             fontSize: mobile ? '1.5em' : '3em',
             fontWeight: 'normal',
-            padding: '.2em',
+            padding: '.1em',
             marginTop: mobile ? '1em' : '2em'
             }}>
           </i>
@@ -67,7 +67,7 @@ const HomepageHeading = ({ mobile }) => {
             style={{
             fontSize: mobile ? '1.5em' : '3em',
             fontWeight: 'normal',
-            padding: '.2em',
+            padding: '.1em',
             marginTop: mobile ? '1em' : '2em'
             }}>
           </i>

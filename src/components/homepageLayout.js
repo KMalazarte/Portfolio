@@ -4,6 +4,7 @@ import React from 'react';
 // import screenShot_3 from '../images/screenshot_3.png';
 import ResponsiveContainer from './responsiveContainer.js'
 import ProjectCards from '../subComponents/projectCards.js'
+import Blogs from '../subComponents/blogs.js'
 import {
   Button,
   Container,
@@ -17,41 +18,21 @@ import {
 const HomepageLayout = () => {
   return(
   <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment style={{ padding: '3em 0em' }} vertical>
       <Grid equal width grid container stackable verticalAlign='middle' >
-        <Grid.Row id="projects">
-            <Header textAlign="center" as='h3' style={{ fontSize: '4em' }}>
+        <Grid.Row centered="true" id="projects">
+            <Header as='h3' style={{ fontSize: '4em' }}>
               Projects
             </Header>
         </Grid.Row>
-        <Grid.Row>
+        <Grid.Row columns="three">
           <ProjectCards />
         </Grid.Row>
       </Grid>
     </Segment>
-    <Segment vertical>
-      <Grid centered="true" columns='equal' stackable>
-        <Grid.Row textAlign='center'>
-          <Header id="blogs" as='h3' style={{ fontSize: '2em' }}>
-            <i class="fab fa-medium">
-            </i>&nbsp;
-            Blogs
-          </Header>
-        </Grid.Row>
-        <Grid.Row>
-          <a href="https://medium.com/@KMalazarte/the-machines-are-learning-3ea4bca2b66a" target="_blank" rel="noopener noreferrer">The Machines Are Learning</a>
-        </Grid.Row>
-        <Grid.Row>
-          <a href="https://medium.com/@KMalazarte/ruby-vs-javascript-f5d9ec9221a" target="_blank" rel="noopener noreferrer">Ruby vs Javascript</a>
-        </Grid.Row>
-        <Grid.Row>
-          <a href="https://medium.com/@KMalazarte/data-analytics-and-tech-in-the-nba-cb48084774f0" target="_blank" rel="noopener noreferrer">Data Analytics & the NBA</a>
-        </Grid.Row>
-        <Grid.Row>
-          <a href="https://medium.com/@KMalazarte/the-atom-packages-your-mama-warned-you-about-or-didnt-5f15d9e50801" target="_blank" rel="noopener noreferrer">My Favorite Atom Packages</a>
-        </Grid.Row>
-      </Grid>
-    </Segment>
+
+    <Blogs />
+
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
         <Header id="about me" as='h3' style={{ fontSize: '2em' }}>
