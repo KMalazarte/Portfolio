@@ -1,14 +1,10 @@
 import React from 'react';
-// import screenShot_1 from '../images/screenshot_1.png';
-// import screenShot_2 from '../images/screenshot_2.png';
-// import screenShot_3 from '../images/screenshot_3.png';
 import ResponsiveContainer from './responsiveContainer.js'
 import ProjectCards from '../subComponents/projectCards.js'
 import Blogs from '../subComponents/blogs.js'
+import AboutMe from '../subComponents/aboutMe.js'
 import {
-  Button,
   Container,
-  Divider,
   Grid,
   Header,
   List,
@@ -18,56 +14,13 @@ import {
 const HomepageLayout = () => {
   return(
   <ResponsiveContainer>
-    <Segment style={{ padding: '3em 0em' }} vertical>
-      <Grid equal width grid container stackable verticalAlign='middle' >
-        <Grid.Row centered="true" id="projects">
-            <Header as='h3' style={{ fontSize: '4em' }}>
-              Projects
-            </Header>
-        </Grid.Row>
-        <Grid.Row columns="three">
-          <ProjectCards />
-        </Grid.Row>
-      </Grid>
-    </Segment>
+
+    <ProjectCards />
 
     <Blogs />
 
-    <Segment style={{ padding: '8em 0em' }} vertical>
-      <Container text>
-        <Header id="about me" as='h3' style={{ fontSize: '2em' }}>
-          About Me
-        </Header>
-        <p style={{ fontSize: '1em' }}>
-          Full stack web developer with a passion for creating user friendly applications that simplify peoples’ lives. With
-          experience in Ruby on Rails, JavaScript, and React.js and a background in commercial insurance, I discovered
-          web development through my curiosity of how modern technology works. By possessing strong skills in project
-          management and team building I can get the most from my team and deliver a functional project on schedule.
-        </p>
-        <Button as='a' size='large'>
-          Read More
-        </Button>
-        <Divider
-          as='h4'
-          className='header'
-          horizontal
-          style={{ margin: '3em 0em', textTransform: 'uppercase' }}
-        >
-          <a href='hayBale'>Case Studies</a>
-        </Divider>
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Did We Tell You About Our Bananas?
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-          it's really true. It took years of gene splicing and combinatory DNA research, but our
-          bananas can really dance.
-        </p>
-        <Button as='a' size='large'>
-          I'm Still Quite Interested
-        </Button>
-      </Container>
-    </Segment>
+    <AboutMe />
+
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
         <Grid divided inverted stackable>

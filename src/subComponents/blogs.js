@@ -13,7 +13,7 @@ const Blogs = () => {
           <Header id="blogs" as='h3' style={{ fontSize: '4em' }}>
             <i class="fab fa-medium">
             </i>&nbsp;
-            Blogs
+            Technical Blogs
           </Header>
         </Grid.Row>
         <Grid.Row>
