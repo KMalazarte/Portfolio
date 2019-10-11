@@ -14,12 +14,12 @@ const ProjectCards = () => {
   return (
     <Segment style={{ padding: '3em 0em' }} vertical>
       <Grid columns={3} equal width grid container stackable verticalAlign='middle'>
-        <Grid.Row centered="true" id="projects">
+        <Grid.Row centered="true" >
           <Header as='h3' style={{ fontSize: '4em' }}>
             Projects
           </Header>
         </Grid.Row>
-        <Grid.Row centered={true}>
+        <Grid.Row centered={true} id="projects">
           <Grid.Column>
             <Card centered raised fluid>
               <Image src={screenShot_1} size="large"/>
@@ -61,7 +61,7 @@ const ProjectCards = () => {
                 </Card.Description>
                 <br />
                 <Card.Meta>
-                  <span className='technology'>React & React Router, Rails, JWT Auth, React Bootstrap, The Movie Database API</span>
+                  <span className='technology'>Built With: React & React Router, Rails, JWT Auth, React Bootstrap, The Movie Database API</span>
                 </Card.Meta>
               </Card.Content>
               <Card.Content textAlign="center" extra>
@@ -92,7 +92,7 @@ const ProjectCards = () => {
               </Card.Description>
               <br />
               <Card.Meta>
-                <span className='technology'>Vanilla Javascript, Rails, Custom CSS</span>
+                <span className='technology'>Built With: Vanilla Javascript, Rails, PostgreSQL, Custom CSS</span>
               </Card.Meta>
             </Card.Content>
             <Card.Content textAlign="center" extra>

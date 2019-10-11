@@ -7,16 +7,16 @@ import {
 
 const Blogs = () => {
   return(
-    <Segment vertical>
+    <Segment style={{ padding: '3em 0em' }}vertical>
       <Grid centered="true" columns='equal' stackable>
         <Grid.Row textAlign='center' style={{ padding:'1.7em'}}>
-          <Header id="blogs" as='h3' style={{ fontSize: '4em' }}>
+          <Header as='h3' style={{ fontSize: '4em' }}>
             <i class="fab fa-medium">
             </i>&nbsp;
             Technical Blogs
           </Header>
         </Grid.Row>
-        <Grid.Row style={{ fontSize: '1.5em' }}>
+        <Grid.Row id="blogs" style={{ fontSize: '1.5em' }}>
           <a href="https://medium.com/@KMalazarte/the-machines-are-learning-3ea4bca2b66a" target="_blank" rel="noopener noreferrer">The Machines Are Learning</a>
         </Grid.Row>
         <Grid.Row style={{ fontSize: '1.5em' }}>

@@ -3,7 +3,6 @@ import {
   Segment,
   Header,
   Container,
-  Button,
   Divider,
   Grid,
   List
@@ -13,7 +12,7 @@ const AboutMe = () => {
   return(
     <Segment style={{ padding: '8em 0em' }} vertical>
       <Container text>
-        <Header id="about me" as='h3' style={{ fontSize: '2em' }}>
+        <Header as='h3' style={{ fontSize: '2em' }}>
           About Me
         </Header>
         <p style={{ fontSize: '1em' }}>
@@ -28,28 +27,41 @@ const AboutMe = () => {
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <p>Skills</p>
+          <p id="about me">Skills</p>
         </Divider>
-        <Grid columns={4} divided>
+        <Grid columns={3} divided>
          <Grid.Row>
            <Grid.Column>
             <Header textAlign="center">
               Languages
             </Header>
               <List>
-                <List.Item>Javascript</List.Item>
-                <List.Item>Ruby</List.Item>
-                <List.Item>SQL</List.Item>
-                <List.Item>HTML5</List.Item>
-                <List.Item>CSS</List.Item>
-              </List>
-           </Grid.Column>
-           <Grid.Column>
-            <Header textAlign="center">
-              Version Control
-            </Header>
-              <List>
-                <List.Item>Git</List.Item>
+                <List.Item>
+                  <List.Header>Programming:</List.Header>
+                </List.Item>
+                <List.List as="ul">
+                  <List.Item>Javascript</List.Item>
+                  <List.Item>Ruby</List.Item>
+                </List.List>
+                <List.Item>
+                  <List.Header>Markup:</List.Header>
+                </List.Item>
+                <List.List as="ul">
+                  <List.Item>HTML5</List.Item>
+                  <List.Item>CSS</List.Item>
+                </List.List>
+                <List.Item>
+                  <List.Header>Database:</List.Header>
+                </List.Item>
+                <List.List as="ul">
+                  <List.Item>SQL</List.Item>
+                </List.List>
+                <List.Item>
+                  <List.Header>Version Control:</List.Header>
+                </List.Item>
+                <List.List as="ul">
+                  <List.Item>Git</List.Item>
+                </List.List>
               </List>
            </Grid.Column>
            <Grid.Column>
@@ -59,6 +71,9 @@ const AboutMe = () => {
                <List>
                  <List.Item>React</List.Item>
                  <List.Item>Rails</List.Item>
+                 <List.Item>Semantic UI</List.Item>
+                 <List.Item>Bootstrap</List.Item>
+                 <List.Item>Materialize</List.Item>
                </List>
            </Grid.Column>
            <Grid.Column>
@@ -66,11 +81,12 @@ const AboutMe = () => {
               Interests
              </Header>
                <List>
-                 <List.Item>Lifting</List.Item>
+                 <List.Item>Fitness</List.Item>
+                 <List.Item>Travel</List.Item>
+                 <List.Item>Food</List.Item>
+                 <List.Item>Basketball</List.Item>
                  <List.Item>Reading</List.Item>
                  <List.Item>Board Gaming</List.Item>
-                 <List.Item>Basketball</List.Item>
-                 <List.Item>Football</List.Item>
                </List>
            </Grid.Column>
          </Grid.Row>
