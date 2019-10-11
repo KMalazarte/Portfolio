@@ -38,30 +38,30 @@ const AboutMe = () => {
               <List>
                 <List.Item>
                   <List.Header>Programming:</List.Header>
+                    <List.List>
+                      <List.Item>Javascript</List.Item>
+                      <List.Item>Ruby</List.Item>
+                    </List.List>
                 </List.Item>
-                <List.List as="ul">
-                  <List.Item>Javascript</List.Item>
-                  <List.Item>Ruby</List.Item>
-                </List.List>
                 <List.Item>
                   <List.Header>Markup:</List.Header>
+                    <List.List>
+                      <List.Item>HTML5</List.Item>
+                      <List.Item>CSS</List.Item>
+                    </List.List>
                 </List.Item>
-                <List.List as="ul">
-                  <List.Item>HTML5</List.Item>
-                  <List.Item>CSS</List.Item>
-                </List.List>
                 <List.Item>
                   <List.Header>Database:</List.Header>
+                    <List.List>
+                      <List.Item>SQL</List.Item>
+                    </List.List>
                 </List.Item>
-                <List.List as="ul">
-                  <List.Item>SQL</List.Item>
-                </List.List>
                 <List.Item>
                   <List.Header>Version Control:</List.Header>
+                    <List.List>
+                      <List.Item>Git</List.Item>
+                    </List.List>
                 </List.Item>
-                <List.List as="ul">
-                  <List.Item>Git</List.Item>
-                </List.List>
               </List>
            </Grid.Column>
            <Grid.Column>

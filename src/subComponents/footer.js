@@ -34,11 +34,10 @@ const Footer = () => {
             </Grid.Column>
             <Grid.Column width={7}>
               <Header as='h4' inverted>
-                Footer Header
+              <i class="fas fa-copyright"></i>
+                &nbsp;2019 Copyright Kevin Malazarte
               </Header>
-              <p>
-                Extra space for a call to action inside the footer that could help re-engage users.
-              </p>
+          
             </Grid.Column>
           </Grid.Row>
         </Grid>

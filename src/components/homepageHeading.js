@@ -38,7 +38,7 @@ const HomepageHeading = ({ mobile }) => {
           </Button>
         </a>
       </div>
-      <div>
+      <div class="social-icons">
         <a href="https://www.linkedin.com/in/kevin-malazarte/" target="_blank" rel="noopener noreferrer">
           <i
             style={{
