@@ -4,7 +4,9 @@ import {
   Header,
   Container,
   Button,
-  Divider
+  Divider,
+  Grid,
+  List
 } from 'semantic-ui-react'
 
 const AboutMe = () => {
@@ -20,28 +22,59 @@ const AboutMe = () => {
           web development through my curiosity of how modern technology works. By possessing strong skills in project
           management and team building I can get the most from my team and deliver a functional project on schedule.
         </p>
-        <Button as='a' size='large'>
-          Read More
-        </Button>
         <Divider
           as='h4'
           className='header'
           horizontal
           style={{ margin: '3em 0em', textTransform: 'uppercase' }}
         >
-          <a href='hayBale'>Case Studies</a>
+          <p>Skills</p>
         </Divider>
-        <Header as='h3' style={{ fontSize: '2em' }}>
-          Did We Tell You About Our Bananas?
-        </Header>
-        <p style={{ fontSize: '1.33em' }}>
-          Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but
-          it's really true. It took years of gene splicing and combinatory DNA research, but our
-          bananas can really dance.
-        </p>
-        <Button as='a' size='large'>
-          I'm Still Quite Interested
-        </Button>
+        <Grid columns={4} divided>
+         <Grid.Row>
+           <Grid.Column>
+            <Header textAlign="center">
+              Languages
+            </Header>
+              <List>
+                <List.Item>Javascript</List.Item>
+                <List.Item>Ruby</List.Item>
+                <List.Item>SQL</List.Item>
+                <List.Item>HTML5</List.Item>
+                <List.Item>CSS</List.Item>
+              </List>
+           </Grid.Column>
+           <Grid.Column>
+            <Header textAlign="center">
+              Version Control
+            </Header>
+              <List>
+                <List.Item>Git</List.Item>
+              </List>
+           </Grid.Column>
+           <Grid.Column>
+             <Header textAlign="center">
+               Libraries & Frameworks
+             </Header>
+               <List>
+                 <List.Item>React</List.Item>
+                 <List.Item>Rails</List.Item>
+               </List>
+           </Grid.Column>
+           <Grid.Column>
+             <Header textAlign="center">
+              Interests
+             </Header>
+               <List>
+                 <List.Item>Lifting</List.Item>
+                 <List.Item>Reading</List.Item>
+                 <List.Item>Board Gaming</List.Item>
+                 <List.Item>Basketball</List.Item>
+                 <List.Item>Football</List.Item>
+               </List>
+           </Grid.Column>
+         </Grid.Row>
+        </Grid>
       </Container>
     </Segment>
   )

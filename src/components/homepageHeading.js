@@ -31,7 +31,7 @@ const HomepageHeading = ({ mobile }) => {
         }}
       />
       <div>
-        <a href="https://drive.google.com/open?id=1oIK5XT9R9rroABlDQNnr7loN2A9Xtfu6" target="_blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/file/d/15qxRNHvhRobXFZ_izpsey_lLUF26eG4r/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <Button inverted color='blue' size='huge'>
             View My Resume &nbsp;
             <i class="far fa-file"></i>

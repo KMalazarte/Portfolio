@@ -22,14 +22,15 @@ const ProjectCards = () => {
         <Grid.Row centered={true}>
           <Grid.Column>
             <Card centered raised fluid>
-              <Image src={screenShot_1} wrapped ui={false} />
+              <Image src={screenShot_1} size="large"/>
               <Card.Content>
                 <Card.Header textAlign="center">$pendy</Card.Header>
                 <Card.Description>
                 An easy way to keep track of expenses to prevent excessive spending
                 </Card.Description>
+                <br />
                 <Card.Meta>
-                  <span className='technology'>React & React Router, Redux, Rails, JWT Auth, Semantic UI React</span>
+                  <span className='technology'>Built With: React & React Router, Redux, Rails, JWT Auth, Semantic UI React</span>
                 </Card.Meta>
               </Card.Content>
               <Card.Content textAlign="center" extra>
@@ -52,14 +53,15 @@ const ProjectCards = () => {
           </Grid.Column>
           <Grid.Column>
             <Card centered raised fluid>
-              <Image src={screenShot_2} wrapped ui={false} />
+              <Image src={screenShot_2} size="large"/>
               <Card.Content>
                 <Card.Header textAlign="center">MovieReviewer</Card.Header>
                 <Card.Description>
                 A movie site where users can rate and review the newest movies
                 </Card.Description>
+                <br />
                 <Card.Meta>
-                  <span className='technology'>Joined in 2015</span>
+                  <span className='technology'>React & React Router, Rails, JWT Auth, React Bootstrap, The Movie Database API</span>
                 </Card.Meta>
               </Card.Content>
               <Card.Content textAlign="center" extra>
@@ -82,14 +84,15 @@ const ProjectCards = () => {
           </Grid.Column>
           <Grid.Column>
           <Card centered raised fluid>
-            <Image src={screenShot_3} wrapped ui={false} />
+            <Image src={screenShot_3} size="large" />
             <Card.Content>
               <Card.Header textAlign="center">Flex Buddy</Card.Header>
               <Card.Description>
-              An easy way to keep track of expenses to prevent excessive spending
+              An exercise helper that shows how to perform exercises and what muscle groups are being affected
               </Card.Description>
+              <br />
               <Card.Meta>
-                <span className='technology'>Joined in 2015</span>
+                <span className='technology'>Vanilla Javascript, Rails, Custom CSS</span>
               </Card.Meta>
             </Card.Content>
             <Card.Content textAlign="center" extra>
