@@ -19,10 +19,9 @@ const ProjectCards = () => {
             Projects
           </Header>
         </Grid.Row>
-        <Grid.Row centered={true} id="projects">
-          <Grid.Column>
+        <Card.Group itemsPerRow={3} centered={true} id="projects">
             <Card centered raised fluid>
-              <Image src={screenShot_1} size="large"/>
+              <Image class="img" src={screenShot_1} size="large"/>
               <Card.Content>
                 <Card.Header textAlign="center">$pendy</Card.Header>
                 <Card.Description>
@@ -50,10 +49,8 @@ const ProjectCards = () => {
                 </a>
               </Card.Content>
             </Card>
-          </Grid.Column>
-          <Grid.Column>
             <Card centered raised fluid>
-              <Image src={screenShot_2} size="large"/>
+              <Image src={screenShot_2} class="img" size="large"/>
               <Card.Content>
                 <Card.Header textAlign="center">MovieReviewer</Card.Header>
                 <Card.Description>
@@ -81,39 +78,36 @@ const ProjectCards = () => {
                 </a>
               </Card.Content>
             </Card>
-          </Grid.Column>
-          <Grid.Column>
-          <Card centered raised fluid>
-            <Image src={screenShot_3} size="large" />
-            <Card.Content>
-              <Card.Header textAlign="center">Flex Buddy</Card.Header>
-              <Card.Description>
-              An exercise helper that shows how to perform exercises and what muscle groups are being affected
-              </Card.Description>
-              <br />
-              <Card.Meta>
-                <span className='technology'>Built With: Vanilla Javascript, Rails, PostgreSQL, Custom CSS</span>
-              </Card.Meta>
-            </Card.Content>
-            <Card.Content textAlign="center" extra>
-              <a href="https://github.com/KMalazarte/mod3_project_front_end" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github">&nbsp;</i>
-                Front End &nbsp;
-              </a>
-              | &nbsp;
-              <a href="https://github.com/KMalazarte/mod3_project_back_end" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github">&nbsp;</i>
-                Back End &nbsp;
-              </a>
-              | &nbsp;
-              <a href="https://www.youtube.com/watch?v=j9ZhmJBlkcI" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-youtube">&nbsp;</i>
-                Demo
-              </a>
-            </Card.Content>
-          </Card>
-        </Grid.Column>
-        </Grid.Row>
+            <Card centered raised fluid>
+              <Image src={screenShot_3} class="img" size="large" />
+              <Card.Content>
+                <Card.Header textAlign="center">Flex Buddy</Card.Header>
+                <Card.Description>
+                An exercise helper that shows how to perform exercises and what muscle groups are being affected
+                </Card.Description>
+                <br />
+                <Card.Meta>
+                  <span className='technology'>Built With: Vanilla Javascript, Rails, PostgreSQL, Custom CSS</span>
+                </Card.Meta>
+              </Card.Content>
+              <Card.Content textAlign="center" extra>
+                <a href="https://github.com/KMalazarte/mod3_project_front_end" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github">&nbsp;</i>
+                  Front End &nbsp;
+                </a>
+                | &nbsp;
+                <a href="https://github.com/KMalazarte/mod3_project_back_end" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github">&nbsp;</i>
+                  Back End &nbsp;
+                </a>
+                | &nbsp;
+                <a href="https://www.youtube.com/watch?v=j9ZhmJBlkcI" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-youtube">&nbsp;</i>
+                  Demo
+                </a>
+              </Card.Content>
+            </Card>
+        </Card.Group>
       </Grid>
     </Segment>
   )
