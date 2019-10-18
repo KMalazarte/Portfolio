@@ -9,10 +9,11 @@ import {
   Header,
   Segment,
 } from 'semantic-ui-react'
+import '../Components.css'
 
 const ProjectCards = () => {
   return (
-    <Segment style={{ padding: '3em 0em' }} vertical>
+    <Segment className="Component" style={{ padding: '3em 0em' }} vertical>
       <Grid columns={3} equal width grid container stackable verticalAlign='middle'>
         <Grid.Row centered="true" >
           <Header as='h3' style={{ fontSize: '4em' }}>

@@ -17,8 +17,7 @@ const Footer = () => {
             <Grid.Column width={3}>
               <Header inverted as='h4' content='About' />
               <List link inverted>
-                <List.Item as='a'>Sitemap</List.Item>
-                <List.Item as='a'>Contact Us</List.Item>
+                <List.Item as='a'>Contact Me</List.Item>
                 <List.Item as='a'>Religious Ceremonies</List.Item>
                 <List.Item as='a'>Gazebo Plans</List.Item>
               </List>
@@ -37,7 +36,7 @@ const Footer = () => {
               <i class="fas fa-copyright"></i>
                 &nbsp;2019 Copyright Kevin Malazarte
               </Header>
-          
+
             </Grid.Column>
           </Grid.Row>
         </Grid>

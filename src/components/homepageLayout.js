@@ -4,6 +4,7 @@ import ProjectCards from '../subComponents/projectCards.js'
 import Blogs from '../subComponents/blogs.js'
 import AboutMe from '../subComponents/aboutMe.js'
 import Footer from '../subComponents/footer.js'
+import '../App.css'
 
 
 const HomepageLayout = () => {

@@ -28,6 +28,9 @@ const Blogs = () => {
         <Grid.Row style={{ fontSize: '1.5em' }}>
           <a href="https://medium.com/@KMalazarte/the-atom-packages-your-mama-warned-you-about-or-didnt-5f15d9e50801" target="_blank" rel="noopener noreferrer">My Favorite Atom Packages</a>
         </Grid.Row>
+        <Grid.Row style={{ fontSize: '1.5em' }}>
+          <a href="https://medium.com/@KMalazarte/using-the-usestate-hook-in-reactjs-2321a9656761" target="_blank" rel="noopener noreferrer">Using the useState Hook in ReactJS</a>
+        </Grid.Row>
       </Grid>
     </Segment>
   )
