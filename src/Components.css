@@ -1,3 +1,8 @@
 .Component {
     background-color: #282c34
 }
+
+.footer-icons {
+  padding: 5px ;
+  font-size: 30px
+}

@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 import {
   Button,
   Container,
-  Header
+  Header,
+
 } from 'semantic-ui-react'
 
 const HomepageHeading = ({ mobile }) => {
+
   return(
     <Container text id="home">
       <Header
@@ -30,6 +32,7 @@ const HomepageHeading = ({ mobile }) => {
           marginTop: mobile ? '0.5em' : '1.5em',
         }}
       />
+
       <div>
         <a href="https://drive.google.com/file/d/15qxRNHvhRobXFZ_izpsey_lLUF26eG4r/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <Button inverted color='blue' size='huge'>
