@@ -32,7 +32,6 @@ const HomepageHeading = ({ mobile }) => {
           marginTop: mobile ? '0.5em' : '1.5em',
         }}
       />
-
       <div>
         <a href="https://drive.google.com/file/d/15qxRNHvhRobXFZ_izpsey_lLUF26eG4r/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <Button inverted color='blue' size='huge'>
@@ -41,7 +40,7 @@ const HomepageHeading = ({ mobile }) => {
           </Button>
         </a>
       </div>
-      <div class="social-icons">
+      <div class="icon-div">
         <a href="https://www.linkedin.com/in/kevin-malazarte/" target="_blank" rel="noopener noreferrer">
           <i
             style={{

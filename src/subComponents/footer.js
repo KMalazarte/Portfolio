@@ -10,12 +10,11 @@ import {
 
 const Footer = () => {
   return(
-
     <Segment inverted vertical style={{ padding: '5em 0em' }}>
       <Container>
-        <Grid center inverted stackable>
+        <Grid inverted stackable>
           <Grid.Row>
-            <Grid.Column width={7}>
+            <Grid.Column textAlign="center">
               <Header as='h4' inverted>
               <i class="fas fa-copyright"></i>
                 &nbsp;2019 Copyright Kevin Malazarte
