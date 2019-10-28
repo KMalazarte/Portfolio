@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReactTypingEffect from 'react-typing-effect';
 import HeaderIcons from '../subComponents/headerIcons.js'
 import {
   Button,
   Container,
-  Header,
-
+  Header
 } from 'semantic-ui-react'
 
 const HomepageHeading = ({ mobile }) => {
+
+  let descriptionArray = ["Full Stack Web Developer", "Proud UConn Alum", "Fitness Junkie", "Shameless Foodie", "World Traveler"]
 
   return(
     <Container id="home">
@@ -23,16 +25,20 @@ const HomepageHeading = ({ mobile }) => {
           marginTop: mobile ? '1.5em' : '3em',
         }}
       />
-      <Header
+      <ReactTypingEffect
         as='h2'
-        content='I like eggs'
+        speed = "92"
+        eraseDelay = "1000"
+        text = {descriptionArray}
         inverted
         style={{
           fontSize: mobile ? '1.5em' : '1.7em',
           fontWeight: 'normal',
           marginTop: mobile ? '0.5em' : '.7em',
+          marginBottom: mobile ? '0.5em' : '.7em',
         }}
       />
+
       <div>
         <a href="https://drive.google.com/file/d/15qxRNHvhRobXFZ_izpsey_lLUF26eG4r/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <Button inverted color='blue' size='large'>

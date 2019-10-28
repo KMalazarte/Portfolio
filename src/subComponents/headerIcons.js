@@ -17,6 +17,7 @@ const HeaderIcons = ({ mobile }) => {
               fontSize: mobile ? '1.5em' : '3em',
               fontWeight: 'normal',
               padding: '.1em',
+              marginTop: mobile ? '0.3em' : '0.2em',
               }}
             class="fab fa-linkedin">
           </i>
@@ -28,6 +29,7 @@ const HeaderIcons = ({ mobile }) => {
             fontSize: mobile ? '1.5em' : '3em',
             fontWeight: 'normal',
             padding: '.1em',
+            marginTop: mobile ? '0.3em' : '0.2em',
             }}>
           </i>
         </a>
@@ -38,6 +40,7 @@ const HeaderIcons = ({ mobile }) => {
             fontSize: mobile ? '1.5em' : '3em',
             fontWeight: 'normal',
             padding: '.1em',
+            marginTop: mobile ? '0.3em' : '0.2em',
             }}>
           </i>
         </a>
