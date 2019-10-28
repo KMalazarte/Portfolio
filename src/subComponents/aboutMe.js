@@ -12,7 +12,7 @@ import {
 
 const AboutMe = () => {
   return(
-    <Segment className="aboutme" style={{ padding: '4em 0em' }} vertical>
+    <Segment style={{ padding: '4em 0em' }} vertical>
     <Container>
         <Header as='h3' style={{ fontSize: '3em' }} textAlign="center">
           About Me

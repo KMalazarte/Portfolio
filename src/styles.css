@@ -4,9 +4,6 @@
 }
 
 #icon-div {
-  vertical-align: top;
-}
-
-.aboutme {
-  padding: 4em 0em;
+  vertical-align: bottom;
+  font-size: 30px
 }
