@@ -3,6 +3,7 @@ import ResponsiveContainer from './responsiveContainer.js'
 import ProjectCards from '../subComponents/projectCards.js'
 import Blogs from '../subComponents/blogs.js'
 import AboutMe from '../subComponents/aboutMe.js'
+import MyForm from '../subComponents/myForm.js'
 import Footer from '../subComponents/footer.js'
 import '../App.css'
 
@@ -13,6 +14,7 @@ const HomepageLayout = () => {
     <ProjectCards />
     <Blogs />
     <AboutMe />
+    <MyForm />
     <Footer />
   </ResponsiveContainer>
 )}
