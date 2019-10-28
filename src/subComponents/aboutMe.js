@@ -1,26 +1,37 @@
 import React from 'react';
+import portfolio_picture from '../images/portfolio_picture.JPG';
 import {
   Segment,
   Header,
   Container,
   Divider,
   Grid,
+  Image,
   List
 } from 'semantic-ui-react'
 
 const AboutMe = () => {
   return(
-    <Segment style={{ padding: '8em 0em' }} vertical>
-      <Container text>
-        <Header as='h3' style={{ fontSize: '2em' }}>
+    <Segment className="aboutme" style={{ padding: '4em 0em' }} vertical>
+    <Container>
+        <Header as='h3' style={{ fontSize: '3em' }} textAlign="center">
           About Me
         </Header>
-        <p style={{ fontSize: '1em' }}>
-          Full stack web developer with a passion for creating user friendly applications that simplify peoples’ lives. With
-          experience in Ruby on Rails, JavaScript, and React.js and a background in commercial insurance, I discovered
-          web development through my curiosity of how modern technology works. By possessing strong skills in project
-          management and team building I can get the most from my team and deliver a functional project on schedule.
-        </p>
+          <Grid>
+            <Grid.Column width={4} >
+            <Image src={portfolio_picture} size="small" circular floated={"right"}/>
+            </Grid.Column>
+            <Grid.Column width={10}>
+              <p style={{ fontSize: '1.2em' }}>
+                I'm a full stack web developer with a passion for creating user friendly applications that simplify peoples’ lives. With
+                experience in Ruby on Rails, JavaScript, and React.js and a background in commercial insurance, I discovered
+                web development through my curiosity of how modern technology works. By possessing strong skills in project
+                management and team building I can get the most from my team and deliver a functional project on schedule.
+              </p>
+            </Grid.Column>
+          </Grid>
+        </Container>
+        <Container text>
         <Divider
           as='h4'
           className='header'

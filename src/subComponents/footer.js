@@ -3,7 +3,6 @@ import '../Components.css'
 import {
   Segment,
   Grid,
-  List,
   Container,
   Header
 } from 'semantic-ui-react'
