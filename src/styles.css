@@ -17,3 +17,15 @@
   font-size: 1em;
   color: red
 }
+
+.blogs {
+  font-size: 1.3em;
+}
+
+#blog-segment {
+  padding: 3em 0em;
+}
+
+#blog-header {
+  padding: 1.7em;
+}
