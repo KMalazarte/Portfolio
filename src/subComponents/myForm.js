@@ -1,4 +1,14 @@
 import React from "react";
+import {
+  Form,
+  Input,
+  TextArea,
+  Message,
+  Button,
+  Container,
+  Header
+} from 'semantic-ui-react'
+
 
 export default class MyForm extends React.Component {
   constructor(props) {
@@ -12,19 +22,44 @@ export default class MyForm extends React.Component {
   render() {
     const { status } = this.state;
     return (
-      <form
-        onSubmit={this.submitForm}
-        action="https://formspree.io/mlerpebz"
-        method="POST"
-      >
-
-        <label>Your Email:</label>
-        <input type="email" name="email" />
-        <label>Message:</label>
-        <input type="text" name="message" />
-        {status === "SUCCESS" ? <p>Thanks I'll respond to you as soon as I can!</p> : <button>Submit</button>}
-        {status === "ERROR" && <p>Ooops! There was an error.</p>}
-      </form>
+      <Container
+        style={{
+          marginBottom: '1.0em'
+        }}>
+        <Header
+          as="h3"
+          size="large"
+          style={{
+            marginTop: '1.0em'
+            }}> Leave Me a Message </Header>
+        <Form
+          onSubmit={this.submitForm}
+          action="https://formspree.io/mlerpebz"
+          method="POST"
+        >
+          <Form.Field
+            control={Input}
+             label='Your Email:'
+             placeholder='YourEmail@email.com'
+             name="email"/>
+          <Form.Field
+            control={TextArea}
+             label='Your Email:'
+             placeholder='Hey, Kevin I loved your portfolio site!'
+             name="message"/>
+          <Message
+             success
+             header='Form Completed'
+             content="Got It! I'll respond to you as soon as I can."
+           />
+         <Message
+            error
+            header='Something went wrong'
+            content='Oops! There was an error.'
+          />
+          <Button>Submit</Button>
+        </Form>
+      </Container>
     );
   }
 

@@ -1,10 +1,6 @@
 import React from 'react';
 import {
-  Segment,
-  Grid,
-  Container,
-  Header,
-
+  Container
 } from 'semantic-ui-react'
 
 const HeaderIcons = ({ mobile }) => {
