@@ -57,6 +57,7 @@ class DesktopContainer extends Component {
                   <Menu.Item onClick={this.clickHandler} as='a'>Projects</Menu.Item>
                   <Menu.Item onClick={this.clickHandler} as='a'>Blogs</Menu.Item>
                   <Menu.Item onClick={this.clickHandler} as='a'>About Me</Menu.Item>
+                  <Menu.Item onClick={this.clickHandler} as='a'>Contact Me</Menu.Item>
               </Container>
             </Menu>
             <HomepageHeading />
