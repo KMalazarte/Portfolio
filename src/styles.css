@@ -7,3 +7,13 @@
   vertical-align: bottom;
   font-size: 30px
 }
+
+#success {
+  font-size: 1em;
+  color: green
+}
+
+#error {
+  font-size: 1em;
+  color: red
+}

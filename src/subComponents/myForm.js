@@ -8,6 +8,7 @@ import {
   Container,
   Header
 } from 'semantic-ui-react'
+import '../styles.css'
 
 
 export default class MyForm extends React.Component {
@@ -47,17 +48,8 @@ export default class MyForm extends React.Component {
              label='Your Email:'
              placeholder='Hey, Kevin I loved your portfolio site!'
              name="message"/>
-          <Message
-             success
-             header='Form Completed'
-             content="Got It! I'll respond to you as soon as I can."
-           />
-         <Message
-            error
-            header='Something went wrong'
-            content='Oops! There was an error.'
-          />
-          <Button>Submit</Button>
+          {status === "SUCCESS" ? <Message id="success">Got It! I'll respond to you as soon as I can.</Message> : <Button>Submit</Button>}
+          {status === "ERROR" && <Message id="error">Oops! There was an error.</Message>}
         </Form>
       </Container>
     );
