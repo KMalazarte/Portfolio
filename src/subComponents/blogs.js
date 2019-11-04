@@ -12,7 +12,7 @@ const Blogs = () => {
     <Segment id="blog-segment" vertical>
       <Grid id="blogs" centered="true" columns='equal' stackable>
         <Grid.Row textAlign='center' id="blog-header">
-          <Header as='h3' style={{ fontSize: '4em' }}>
+          <Header as='h3' id="blogs-header-font">
             <i class="fab fa-medium">
             </i>&nbsp;
             Technical Blogs
