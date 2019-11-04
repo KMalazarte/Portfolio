@@ -29,3 +29,20 @@
 #blog-header {
   padding: 1.7em;
 }
+
+#aboutMe-Segment {
+  padding: 4em 0em;
+}
+
+#aboutMe-Header {
+  font-size: 3em;
+}
+
+#aboutMe-p {
+  font-size: 1.2em;
+}
+
+#aboutMe-divider {
+  margin: 3em 0em;
+  text-transform: uppercase;
+}

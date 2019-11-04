@@ -9,7 +9,7 @@ import {
   Header,
   Segment,
 } from 'semantic-ui-react'
-import '../Components.css'
+import '../styles.css'
 
 const ProjectCards = () => {
   return (
