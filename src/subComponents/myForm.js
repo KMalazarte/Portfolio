@@ -25,15 +25,13 @@ export default class MyForm extends React.Component {
     return (
       <Container
         id ="contact me"
-        style={{
-          marginBottom: '1.0em'
-        }}>
+        className = "contact-me"
+      >
         <Header
           as="h3"
           size="large"
-          style={{
-            marginTop: '1.0em'
-            }}> Leave Me a Message </Header>
+          id="myForm-header"
+          > Leave Me a Message </Header>
         <Form
           onSubmit={this.submitForm}
           action="https://formspree.io/mlerpebz"
@@ -41,12 +39,12 @@ export default class MyForm extends React.Component {
         >
           <Form.Field
             control={Input}
-             label='Your Email:'
+             label='Your Email Address:'
              placeholder='YourEmail@email.com'
              name="email"/>
           <Form.Field
             control={TextArea}
-             label='Your Email:'
+             label='Your Message:'
              placeholder='Hey, Kevin I loved your portfolio site!'
              name="message"/>
           {status === "SUCCESS" ? <Message id="success">Got It! I'll respond to you as soon as I can.</Message> : <Button>Submit</Button>}
