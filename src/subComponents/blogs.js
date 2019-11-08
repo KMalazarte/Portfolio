@@ -25,6 +25,7 @@ const Blogs = () => {
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/the-atom-packages-your-mama-warned-you-about-or-didnt-5f15d9e50801" target="_blank" rel="noopener noreferrer">My Favorite Atom Packages</a>}/>
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/using-the-usestate-hook-in-reactjs-2321a9656761" target="_blank" rel="noopener noreferrer">Using the useState Hook in ReactJS</a>}/>
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/creating-my-personal-portfolio-site-5ee2c33b6fa" target="_blank" rel="noopener noreferrer">Creating My Personal Portfolio Site</a>}/>
+         <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/my-first-technical-code-challenge-f188280973d1" target="_blank" rel="noopener noreferrer">My First Technical Code Challenge</a>}/>
        </List>
       </Grid>
     </Segment>

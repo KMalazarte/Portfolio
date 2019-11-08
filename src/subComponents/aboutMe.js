@@ -14,12 +14,12 @@ import {
 const AboutMe = () => {
   return(
     <Segment id="aboutMe-Segment" vertical>
-    <Container>
+    <Container >
         <Header as='h3' id="aboutMe-Header" textAlign="center">
           About Me
         </Header>
           <Grid>
-            <Grid.Column width={4} >
+            <Grid.Column id="about me" width={4} >
             <Image src={portfolio_picture} size="small" circular floated={"right"}/>
             </Grid.Column>
             <Grid.Column width={10}>
