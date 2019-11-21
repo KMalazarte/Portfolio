@@ -10,7 +10,7 @@ import {
 
 const HomepageHeading = ({ mobile }) => {
 
-  let descriptionArray = ["Full Stack Web Developer", "Proud UConn Alum", "Fitness Junkie", "Shameless Foodie", "Aspiring World Traveler"]
+  let descriptionArray = ["Full Stack Web Developer", "Proud UConn Alum", "Fitness Junkie", "Aspiring World Traveler"]
 
   return(
     <Container id="home">
