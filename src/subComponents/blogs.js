@@ -27,8 +27,7 @@ const Blogs = () => {
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/creating-my-personal-portfolio-site-5ee2c33b6fa" target="_blank" rel="noopener noreferrer">Creating My Personal Portfolio Site</a>}/>
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/my-first-technical-code-challenge-f188280973d1" target="_blank" rel="noopener noreferrer">My First Technical Code Challenge</a>}/>
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/revisiting-old-code-58b3d8d404c2" target="_blank" rel="noopener noreferrer">Revisiting Old Code</a>}/>
-         <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/lifecycle-methods-with-reactjs-hooks-9126d6d535c5" target="_blank" rel="noopener noreferrer">Lifecycle methods with ReactJS hooks
-         </a>}/>
+         <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/lifecycle-methods-with-reactjs-hooks-9126d6d535c5" target="_blank" rel="noopener noreferrer">Lifecycle Methods with ReactJS hooks</a>}/>
 
        </List>
       </Grid>
