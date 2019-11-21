@@ -19,7 +19,7 @@ const Blogs = () => {
           </Header>
         </Grid.Row>
         <List>
-         <List.Item className="blogs-items" content={<a href='https://medium.com/@KMalazarte/the-machines-are-learning-3ea4bca2b66a" target="_blank" rel="noopener noreferrer'>The Machines Are Learning</a>}/>
+         <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/the-machines-are-learning-3ea4bca2b66a" target="_blank" rel="noopener noreferrer">The Machines Are Learning</a>}/>
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/ruby-vs-javascript-f5d9ec9221a" target="_blank" rel="noopener noreferrer">Ruby vs Javascript</a>}/>
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/data-analytics-and-tech-in-the-nba-cb48084774f0" target="_blank" rel="noopener noreferrer">Data Analytics & the NBA</a>}/>
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/the-atom-packages-your-mama-warned-you-about-or-didnt-5f15d9e50801" target="_blank" rel="noopener noreferrer">My Favorite Atom Packages</a>}/>
