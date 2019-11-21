@@ -21,6 +21,7 @@ class MobileContainer extends Component {
   clickHandler = (e) => {
     console.log(e.currentTarget.innerText.toLowerCase())
     document.getElementById(e.currentTarget.innerText.toLowerCase()).scrollIntoView({block: "center", behavior: "smooth"})
+    this.setState({ sidebarOpened: false })
   }
 
   render() {
