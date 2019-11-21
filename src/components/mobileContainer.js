@@ -18,6 +18,11 @@ class MobileContainer extends Component {
 
   handleToggle = () => this.setState({ sidebarOpened: true })
 
+  clickHandler = (e) => {
+    console.log(e.currentTarget.innerText.toLowerCase())
+    document.getElementById(e.currentTarget.innerText.toLowerCase()).scrollIntoView({block: "center", behavior: "smooth"})
+  }
+
   render() {
     const { children } = this.props
     const { sidebarOpened } = this.state
@@ -45,10 +50,10 @@ class MobileContainer extends Component {
           <Menu.Item as='a' active>
             Home
           </Menu.Item>
-          <Menu.Item as='a'>Projects</Menu.Item>
-          <Menu.Item as='a'>Blogs</Menu.Item>
-          <Menu.Item as='a'>About Me</Menu.Item>
-          <Menu.Item as='a'>Contact Me</Menu.Item>
+          <Menu.Item onClick={this.clickHandler} as='a'>Projects</Menu.Item>
+          <Menu.Item onClick={this.clickHandler} as='a'>Blogs</Menu.Item>
+          <Menu.Item onClick={this.clickHandler} as='a'>About Me</Menu.Item>
+          <Menu.Item onClick={this.clickHandler} as='a'>Contact Me</Menu.Item>
         </Sidebar>
 
         <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -62,14 +67,6 @@ class MobileContainer extends Component {
               <Menu inverted pointing secondary size='large'>
                 <Menu.Item onClick={this.handleToggle}>
                   <Icon name='sidebar' />
-                </Menu.Item>
-                <Menu.Item position='right'>
-                  <Button as='a' inverted>
-                    Log in
-                  </Button>
-                  <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
-                    Sign Up
-                  </Button>
                 </Menu.Item>
               </Menu>
             </Container>
