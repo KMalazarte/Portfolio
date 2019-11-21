@@ -7,8 +7,7 @@ import {
   Segment,
   Responsive,
   Sidebar,
-  Icon,
-  Button
+  Icon
 } from 'semantic-ui-react'
 
 class MobileContainer extends Component {
