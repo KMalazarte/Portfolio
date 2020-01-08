@@ -30,6 +30,9 @@ const Blogs = () => {
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/lifecycle-methods-with-reactjs-hooks-9126d6d535c5" target="_blank" rel="noopener noreferrer">Lifecycle Methods with ReactJS hooks</a>}/>
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/the-single-number-algorithm-problem-5b24831c2169" target="_blank" rel="noopener noreferrer">The Single Number Algorithm</a>}/>
          <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/first-unique-character-in-a-string-9708453176d9" target="_blank" rel="noopener noreferrer">First Unique Character in a String</a>}/>
+         <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/redux-keywords-explained-c52cba54b561" target="_blank" rel="noopener noreferrer">Redux Keywords</a>}/>
+         <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/promise-all-in-javascript-8d4fc8d07331" target="_blank" rel="noopener noreferrer">Promise.all() in javascript</a>}/>
+         <List.Item className="blogs-items" content={<a href="https://medium.com/@KMalazarte/best-time-to-buy-and-sell-stock-problem-i-699b81e56c38" target="_blank" rel="noopener noreferrer">Best Time to Buy and Sell Stock Problem I</a>}/>
        </List>
       </Grid>
     </Segment>
