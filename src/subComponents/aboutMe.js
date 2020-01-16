@@ -14,22 +14,22 @@ import {
 const AboutMe = () => {
   return(
     <Segment id="aboutMe-Segment" vertical>
-    <Container >
+      <Container>
         <Header as='h3' id="aboutMe-Header" textAlign="center">
           About Me
         </Header>
-          <Grid>
-            <Grid.Column id="about me" width={4} >
-            <Image src={portfolio_picture} size="small" circular floated={"right"}/>
-            </Grid.Column>
-            <Grid.Column width={10}>
-              <p id="aboutMe-p">
-                I'm a full stack web developer with a passion for creating user friendly applications that simplify peoples’ lives. With
-                experience in Ruby on Rails, JavaScript, and React.js and a background in commercial insurance, I discovered
-                web development through my curiosity of how modern technology works. By possessing strong skills in project
-                management and team building I can get the most from my team and deliver a functional project on schedule.
-              </p>
-            </Grid.Column>
+        <Grid>
+          <Grid.Column id="about me" width={4} >
+          <Image src={portfolio_picture} size="small" circular floated={"right"}/>
+          </Grid.Column>
+          <Grid.Column width={10}>
+            <p id="aboutMe-p">
+              I'm a full stack web developer with a passion for creating user friendly applications that simplify peoples’ lives. With
+              experience in Ruby on Rails, JavaScript, and ReactJS and a background in commercial insurance, I discovered
+              web development through my curiosity of how modern technology works. By possessing strong skills in project
+              management and team building I can get the most from my team and deliver a functional project on schedule.
+            </p>
+          </Grid.Column>
           </Grid>
         </Container>
         <Container text>
@@ -59,7 +59,7 @@ const AboutMe = () => {
                   <List.Header>Markup:</List.Header>
                     <List.List>
                       <List.Item>HTML5</List.Item>
-                      <List.Item>CSS</List.Item>
+                      <List.Item>CSS3</List.Item>
                     </List.List>
                 </List.Item>
                 <List.Item>
@@ -81,7 +81,8 @@ const AboutMe = () => {
                Libraries & Frameworks
              </Header>
                <List>
-                 <List.Item>React</List.Item>
+                 <List.Item>ReactJS</List.Item>
+                 <List.Item>Redux</List.Item>
                  <List.Item>Rails</List.Item>
                  <List.Item>Semantic UI</List.Item>
                  <List.Item>Bootstrap</List.Item>
