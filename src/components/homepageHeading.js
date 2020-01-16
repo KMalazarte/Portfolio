@@ -40,7 +40,7 @@ const HomepageHeading = ({ mobile }) => {
       />
 
       <div>
-        <a href="https://drive.google.com/file/d/1pZoqr_CrgCAWFDm_qtasvS8MOd7eN0gG/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <a href="https://drive.google.com/file/d/1tqOj4No5G4OSfs-mP5QDC6dE3h7zstUx/view?usp=sharing" target="_blank" rel="noopener noreferrer">
           <Button inverted color='blue' size='large'>
             View My Resume &nbsp;
             <i class="far fa-file"></i>
