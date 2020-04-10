@@ -51,11 +51,16 @@ const ProjectCards = () => {
               </Card.Content>
             </Card>
             <Card centered raised fluid>
-              <Image src={screenShot_2} class="img" size="large"/>
+              <a href="https://kevinsmoviereviewer.herokuapp.com/">
+                <Image src={screenShot_2} class="img" size="large"/>
+              </a>
               <Card.Content>
-                <Card.Header textAlign="center">MovieReviewer</Card.Header>
-                <Card.Description>
-                A movie site where users can rate and review the newest movies
+                <a href="https://kevinsmoviereviewer.herokuapp.com/" id="Title">
+                  <Card.Header textAlign="center">MovieReviewer</Card.Header>
+                </a>
+                <Card.Description id="movie-desc">
+                  A movie site where users can rate and review the newest movies<br/>
+                  (Please allow 30 seconds and/or refresh for site to wake up due to heroku free tier)
                 </Card.Description>
                 <br />
                 <Card.Meta>
