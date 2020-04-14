@@ -55,7 +55,7 @@ const ProjectCards = () => {
                 <Image src={screenShot_2} class="img" size="large"/>
               </a>
               <Card.Content>
-                <a href="https://kevinsmoviereviewer.herokuapp.com/" id="Title">
+                <a href="https://kevinsmoviereviewer.herokuapp.com/" id="Title" target="_blank" rel="noopener noreferrer">
                   <Card.Header textAlign="center">MovieReviewer</Card.Header>
                 </a>
                 <Card.Description id="movie-desc">
