@@ -21,7 +21,7 @@ const ProjectCards = () => {
           </Header>
         </Grid.Row>
         <Card.Group itemsPerRow={3} centered={true} id="projects">
-            <Card centered raised fluid>
+            <Card className="project-card" centered raised fluid>
               <Image class="img" src={screenShot_1} size="large"/>
               <Card.Content>
                 <Card.Header textAlign="center">$pendy</Card.Header>
@@ -50,7 +50,7 @@ const ProjectCards = () => {
                 </a>
               </Card.Content>
             </Card>
-            <Card centered raised fluid>
+            <Card className="project-card" centered raised fluid>
               <a href="https://kevinsmoviereviewer.herokuapp.com/">
                 <Image src={screenShot_2} class="img" size="large"/>
               </a>
@@ -60,7 +60,6 @@ const ProjectCards = () => {
                 </a>
                 <Card.Description id="movie-desc">
                   A movie site where users can rate and review the newest movies<br/>
-                  (Please allow 30 seconds and/or refresh for site to wake up due to heroku free tier)
                 </Card.Description>
                 <br />
                 <Card.Meta>
@@ -84,7 +83,7 @@ const ProjectCards = () => {
                 </a>
               </Card.Content>
             </Card>
-            <Card centered raised fluid>
+            <Card className="project-card" centered raised fluid>
               <Image src={screenShot_3} class="img" size="large" />
               <Card.Content>
                 <Card.Header textAlign="center">Flex Buddy</Card.Header>
